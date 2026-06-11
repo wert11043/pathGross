@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Path Gross Flashcards</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="hero">
+      <p class="eyebrow">Pathology Gross Review</p>
+      <h1 id="pageTitle">Path Gross Flashcards</h1>
+      <p class="hero-copy" id="pageSubtitle">
+        Tap to reveal. Swipe right for familiar, swipe left for unfamiliar.
+      </p>
+    </header>
+
+    <section class="control-panel">
+      <div class="control-block">
+        <div class="control-label">Review pool</div>
+        <div class="chip-row" id="poolChips"></div>
+      </div>
+
+      <div class="control-block">
+        <div class="control-label">System</div>
+        <div class="chip-row scroll-row" id="groupChips"></div>
+      </div>
+
+      <div class="status-grid">
+        <div class="status-card">
+          <span class="status-label">Remaining</span>
+          <strong id="remainingCount">0</strong>
+        </div>
+        <div class="status-card">
+          <span class="status-label">Marked Familiar</span>
+          <strong id="knownCount">0</strong>
+        </div>
+        <div class="status-card">
+          <span class="status-label">Marked Unfamiliar</span>
+          <strong id="unknownCount">0</strong>
+        </div>
+        <div class="status-card">
+          <span class="status-label">Current</span>
+          <strong id="positionCount">0 / 0</strong>
+        </div>
+      </div>
+
+      <div class="toolbar">
+        <button type="button" class="tool-btn" id="shuffleBtn">Shuffle</button>
+        <button type="button" class="tool-btn" id="toggleMaskBtn">Show Source Labels</button>
+        <button type="button" class="tool-btn danger-btn" id="resetProgressBtn">Reset Progress</button>
+      </div>
+    </section>
+
+    <main class="study-layout">
+      <section class="card-stage">
+        <div class="swipe-badge left" id="leftBadge">Unfamiliar</div>
+        <div class="swipe-badge right" id="rightBadge">Familiar</div>
+
+        <article class="flashcard" id="flashcard" tabindex="0" aria-live="polite">
+          <div class="card-header">
+            <span class="meta-pill" id="cardGroup">System</span>
+            <span class="meta-pill muted" id="cardPage">Page 0</span>
+          </div>
+
+          <div class="image-frame" id="imageFrame">
+            <img id="cardImage" alt="Gross specimen flashcard image">
+            <div class="label-mask top"></div>
+            <div class="label-mask bottom"></div>
+          </div>
+
+          <div class="card-body">
+            <p class="hint-line" id="hintLine">Tap the card or press space to reveal the diagnosis.</p>
+            <div class="answer-panel is-hidden" id="answerPanel">
+              <p class="answer-label">Diagnosis</p>
+              <h2 id="cardAnswer">Answer</h2>
+              <p class="answer-meta" id="cardOrgan">Organ</p>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <aside class="desktop-panel">
+        <div class="legend-card">
+          <h2>Controls</h2>
+          <ul>
+            <li>Tap card or press <code>Space</code> to reveal</li>
+            <li>Swipe right or press <code>Right Arrow</code> to mark familiar</li>
+            <li>Swipe left or press <code>Left Arrow</code> to mark unfamiliar</li>
+            <li>Use <code>R</code> to reshuffle the current deck</li>
+          </ul>
+        </div>
+
+        <div class="button-stack">
+          <button type="button" class="answer-btn reveal-btn" id="revealBtn">Reveal Diagnosis</button>
+          <button type="button" class="answer-btn unknown-btn" id="unknownBtn">Mark Unfamiliar</button>
+          <button type="button" class="answer-btn known-btn" id="knownBtn">Mark Familiar</button>
+        </div>
+
+        <div class="legend-card" id="emptyStateCard">
+          <h2>No cards in this filter</h2>
+          <p>Change the pool or system filter to continue reviewing.</p>
+        </div>
+      </aside>
+    </main>
+  </div>
+
+  <script src="cards.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
