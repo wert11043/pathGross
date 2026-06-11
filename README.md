@@ -1,14 +1,16 @@
 # Path Gross Flashcards
 
-An Anki-style gross pathology review site built from `GROSS標本.pdf`.
+An Anki-style gross pathology review site built from the gross specimen PDF.
 
 ## Features
 
 - Mobile-first review flow with swipe gestures
 - Desktop controls with keyboard shortcuts
+- Extracted embedded specimen images instead of page screenshots
+- Pages with two specimen photos show both images on the same card
 - System filters and progress pools
 - Local progress saved in browser storage
-- Optional source-label overlay toggle
+- Optional top and bottom label-cover toggle
 
 ## Controls
 

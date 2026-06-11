@@ -42,7 +42,7 @@ const elements = {
   resetProgressBtn: document.getElementById("resetProgressBtn"),
   flashcard: document.getElementById("flashcard"),
   imageFrame: document.getElementById("imageFrame"),
-  cardImage: document.getElementById("cardImage"),
+  imageGallery: document.getElementById("imageGallery"),
   cardGroup: document.getElementById("cardGroup"),
   cardPage: document.getElementById("cardPage"),
   hintLine: document.getElementById("hintLine"),
@@ -132,10 +132,46 @@ function renderFilters() {
 }
 
 function setButtonState(disabled) {
-  [elements.revealBtn, elements.unknownBtn, elements.knownBtn, elements.shuffleBtn].forEach((button) => {
+  [elements.revealBtn, elements.unknownBtn, elements.knownBtn, elements.shuffleBtn, elements.toggleMaskBtn].forEach((button) => {
     button.disabled = disabled;
     button.style.opacity = disabled ? "0.5" : "1";
     button.style.cursor = disabled ? "not-allowed" : "pointer";
+  });
+}
+
+function getCardImages(card) {
+  if (Array.isArray(card.images) && card.images.length > 0) {
+    return card.images;
+  }
+  if (card.image) {
+    return [card.image];
+  }
+  return [];
+}
+
+function renderGallery(card) {
+  const images = getCardImages(card);
+  elements.imageGallery.innerHTML = "";
+  elements.imageGallery.dataset.count = String(images.length);
+
+  images.forEach((src, index) => {
+    const tile = document.createElement("figure");
+    tile.className = "image-tile";
+
+    const image = document.createElement("img");
+    image.src = src;
+    image.alt = `Gross specimen image ${index + 1} for page ${card.page}`;
+    tile.appendChild(image);
+
+    const topMask = document.createElement("div");
+    topMask.className = "label-mask top";
+    tile.appendChild(topMask);
+
+    const bottomMask = document.createElement("div");
+    bottomMask.className = "label-mask bottom";
+    tile.appendChild(bottomMask);
+
+    elements.imageGallery.appendChild(tile);
   });
 }
 
@@ -159,8 +195,8 @@ function renderCard() {
   if (!card) {
     elements.cardGroup.textContent = "No cards";
     elements.cardPage.textContent = "Page -";
-    elements.cardImage.removeAttribute("src");
-    elements.cardImage.alt = "No gross specimen image available for this filter.";
+    elements.imageGallery.innerHTML = "";
+    elements.imageGallery.dataset.count = "0";
     elements.answerPanel.classList.add("is-hidden");
     elements.flashcard.classList.remove("is-revealed");
     elements.hintLine.textContent = "Change the review pool or system filter to keep studying.";
@@ -173,12 +209,11 @@ function renderCard() {
   setButtonState(false);
   elements.cardGroup.textContent = card.group;
   elements.cardPage.textContent = `Page ${card.page}`;
-  elements.cardImage.src = card.image;
-  elements.cardImage.alt = `Gross specimen flashcard page ${card.page}`;
+  renderGallery(card);
   elements.cardAnswer.textContent = card.answer;
   elements.cardOrgan.textContent = `${card.organ} - Page ${card.page}`;
   elements.imageFrame.classList.toggle("show-source", state.showSource);
-  elements.toggleMaskBtn.textContent = state.showSource ? "Hide Source Labels" : "Show Source Labels";
+  elements.toggleMaskBtn.textContent = state.showSource ? "Cover Labels Again" : "Show Full Images";
 
   if (state.revealed) {
     elements.flashcard.classList.add("is-revealed");

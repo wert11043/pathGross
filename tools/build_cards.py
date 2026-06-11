@@ -1,20 +1,22 @@
 from __future__ import annotations
 
+import io
 import json
 from pathlib import Path
 
 import fitz
-from PIL import Image
+from PIL import Image, ImageOps
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
-PDF_PATH = REPO_ROOT.parent / "GROSS標本.pdf"
+PDF_GLOB = "GROSS*.pdf"
 IMAGE_DIR = REPO_ROOT / "assets" / "cards"
 DATA_PATH = REPO_ROOT / "cards.js"
 
-MAX_WIDTH = 1100
-JPEG_QUALITY = 72
-SCALE = 1.55
+MAX_IMAGE_EDGE = 1400
+JPEG_QUALITY = 82
+MIN_IMAGE_AREA = 120_000
+MIN_IMAGE_EDGE = 320
 
 
 CARDS = [
@@ -138,6 +140,13 @@ CARDS = [
 ]
 
 
+def resolve_pdf_path() -> Path:
+    candidates = sorted(REPO_ROOT.parent.glob(PDF_GLOB))
+    if not candidates:
+        raise FileNotFoundError(f"No PDF matched {PDF_GLOB!r} under {REPO_ROOT.parent}")
+    return candidates[0]
+
+
 def slugify(value: str) -> str:
     safe = []
     for char in value.lower():
@@ -151,38 +160,86 @@ def slugify(value: str) -> str:
     return slug.strip("-")
 
 
-def build_cards():
-    if not PDF_PATH.exists():
-        raise FileNotFoundError(f"Missing PDF: {PDF_PATH}")
-
+def clear_generated_images() -> None:
     IMAGE_DIR.mkdir(parents=True, exist_ok=True)
-    doc = fitz.open(PDF_PATH)
+    for path in IMAGE_DIR.iterdir():
+        if path.is_file():
+            path.unlink()
+
+
+def resize_image(image: Image.Image) -> Image.Image:
+    width, height = image.size
+    longest_edge = max(width, height)
+    if longest_edge <= MAX_IMAGE_EDGE:
+        return image
+    scale = MAX_IMAGE_EDGE / longest_edge
+    return image.resize(
+        (int(width * scale), int(height * scale)),
+        Image.Resampling.LANCZOS,
+    )
+
+
+def extract_page_images(doc: fitz.Document, page_number: int) -> list[Image.Image]:
+    page = doc[page_number - 1]
+    extracted_images = []
+    seen_xrefs = set()
+
+    for image_info in page.get_images(full=True):
+        xref = image_info[0]
+        width = image_info[2]
+        height = image_info[3]
+
+        if xref in seen_xrefs:
+            continue
+        seen_xrefs.add(xref)
+
+        if width * height < MIN_IMAGE_AREA or min(width, height) < MIN_IMAGE_EDGE:
+            continue
+
+        payload = doc.extract_image(xref)
+        image = Image.open(io.BytesIO(payload["image"]))
+        image = ImageOps.exif_transpose(image).convert("RGB")
+        extracted_images.append(resize_image(image))
+
+    if not extracted_images:
+        raise RuntimeError(f"No embedded specimen images found on page {page_number}")
+
+    return extracted_images
+
+
+def save_card_images(page_number: int, images: list[Image.Image]) -> list[str]:
+    output_paths = []
+    for index, image in enumerate(images, start=1):
+        image_name = f"p{page_number:03d}-{index}.jpg"
+        image_path = IMAGE_DIR / image_name
+        image.save(image_path, format="JPEG", quality=JPEG_QUALITY, optimize=True, progressive=True)
+        output_paths.append(f"assets/cards/{image_name}")
+    return output_paths
+
+
+def build_cards() -> None:
+    pdf_path = resolve_pdf_path()
+    clear_generated_images()
     output_cards = []
 
-    for index, card in enumerate(CARDS, start=1):
-        page_number = card["page"]
-        image_name = f"p{page_number:03d}.jpg"
-        image_path = IMAGE_DIR / image_name
+    with fitz.open(pdf_path) as doc:
+        for index, card in enumerate(CARDS, start=1):
+            page_number = card["page"]
+            image_paths = save_card_images(page_number, extract_page_images(doc, page_number))
 
-        if not image_path.exists():
-            pix = doc[page_number - 1].get_pixmap(matrix=fitz.Matrix(SCALE, SCALE), alpha=False)
-            image = Image.frombytes("RGB", [pix.width, pix.height], pix.samples)
-            if image.width > MAX_WIDTH:
-                ratio = MAX_WIDTH / image.width
-                image = image.resize((MAX_WIDTH, int(image.height * ratio)), Image.Resampling.LANCZOS)
-            image.save(image_path, format="JPEG", quality=JPEG_QUALITY, optimize=True, progressive=True)
-
-        output_cards.append(
-            {
-                "id": f"card-{index:03d}",
-                "page": page_number,
-                "group": card["group"],
-                "answer": card["answer"],
-                "organ": card["organ"],
-                "image": f"assets/cards/{image_name}",
-                "slug": slugify(f"{card['group']}-{card['answer']}-{page_number}"),
-            }
-        )
+            output_cards.append(
+                {
+                    "id": f"card-{index:03d}",
+                    "page": page_number,
+                    "group": card["group"],
+                    "answer": card["answer"],
+                    "organ": card["organ"],
+                    "image": image_paths[0],
+                    "images": image_paths,
+                    "imageCount": len(image_paths),
+                    "slug": slugify(f"{card['group']}-{card['answer']}-{page_number}"),
+                }
+            )
 
     groups = []
     for card in output_cards:
@@ -201,6 +258,7 @@ def build_cards():
         encoding="utf-8",
     )
 
+    print(f"Using PDF: {pdf_path}")
     print(f"Wrote {len(output_cards)} cards to {DATA_PATH}")
     print(f"Images in {IMAGE_DIR}")
 

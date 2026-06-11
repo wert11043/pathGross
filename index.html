@@ -48,7 +48,7 @@
 
       <div class="toolbar">
         <button type="button" class="tool-btn" id="shuffleBtn">Shuffle</button>
-        <button type="button" class="tool-btn" id="toggleMaskBtn">Show Source Labels</button>
+        <button type="button" class="tool-btn" id="toggleMaskBtn">Show Full Images</button>
         <button type="button" class="tool-btn danger-btn" id="resetProgressBtn">Reset Progress</button>
       </div>
     </section>
@@ -65,9 +65,7 @@
           </div>
 
           <div class="image-frame" id="imageFrame">
-            <img id="cardImage" alt="Gross specimen flashcard image">
-            <div class="label-mask top"></div>
-            <div class="label-mask bottom"></div>
+            <div class="image-gallery" id="imageGallery" aria-live="polite"></div>
           </div>
 
           <div class="card-body">

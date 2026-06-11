@@ -27,7 +27,12 @@ window.PATH_GROSS_DATA = {
       "group": "GI tract",
       "answer": "Esophageal squamous cell carcinoma",
       "organ": "Esophagus",
-      "image": "assets/cards/p003.jpg",
+      "image": "assets/cards/p003-1.jpg",
+      "images": [
+        "assets/cards/p003-1.jpg",
+        "assets/cards/p003-2.jpg"
+      ],
+      "imageCount": 2,
       "slug": "gi-tract-esophageal-squamous-cell-carcinoma-3"
     },
     {
@@ -36,7 +41,12 @@ window.PATH_GROSS_DATA = {
       "group": "GI tract",
       "answer": "Gastric adenocarcinoma, diffuse type",
       "organ": "Stomach",
-      "image": "assets/cards/p004.jpg",
+      "image": "assets/cards/p004-1.jpg",
+      "images": [
+        "assets/cards/p004-1.jpg",
+        "assets/cards/p004-2.jpg"
+      ],
+      "imageCount": 2,
       "slug": "gi-tract-gastric-adenocarcinoma-diffuse-type-4"
     },
     {
@@ -45,7 +55,11 @@ window.PATH_GROSS_DATA = {
       "group": "GI tract",
       "answer": "Gastrointestinal stromal tumor (GIST)",
       "organ": "Stomach",
-      "image": "assets/cards/p005.jpg",
+      "image": "assets/cards/p005-1.jpg",
+      "images": [
+        "assets/cards/p005-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "gi-tract-gastrointestinal-stromal-tumor-gist-5"
     },
     {
@@ -54,7 +68,11 @@ window.PATH_GROSS_DATA = {
       "group": "GI tract",
       "answer": "Intussusception",
       "organ": "Small intestine",
-      "image": "assets/cards/p006.jpg",
+      "image": "assets/cards/p006-1.jpg",
+      "images": [
+        "assets/cards/p006-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "gi-tract-intussusception-6"
     },
     {
@@ -63,7 +81,11 @@ window.PATH_GROSS_DATA = {
       "group": "GI tract",
       "answer": "Intussusception",
       "organ": "Small intestine",
-      "image": "assets/cards/p007.jpg",
+      "image": "assets/cards/p007-1.jpg",
+      "images": [
+        "assets/cards/p007-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "gi-tract-intussusception-7"
     },
     {
@@ -72,7 +94,11 @@ window.PATH_GROSS_DATA = {
       "group": "GI tract",
       "answer": "Colon adenocarcinoma",
       "organ": "Colon",
-      "image": "assets/cards/p008.jpg",
+      "image": "assets/cards/p008-1.jpg",
+      "images": [
+        "assets/cards/p008-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "gi-tract-colon-adenocarcinoma-8"
     },
     {
@@ -81,7 +107,11 @@ window.PATH_GROSS_DATA = {
       "group": "GI tract",
       "answer": "Diverticulosis",
       "organ": "Colon",
-      "image": "assets/cards/p009.jpg",
+      "image": "assets/cards/p009-1.jpg",
+      "images": [
+        "assets/cards/p009-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "gi-tract-diverticulosis-9"
     },
     {
@@ -90,7 +120,11 @@ window.PATH_GROSS_DATA = {
       "group": "GI tract",
       "answer": "Ulcerative colitis",
       "organ": "Colon",
-      "image": "assets/cards/p010.jpg",
+      "image": "assets/cards/p010-1.jpg",
+      "images": [
+        "assets/cards/p010-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "gi-tract-ulcerative-colitis-10"
     },
     {
@@ -99,7 +133,11 @@ window.PATH_GROSS_DATA = {
       "group": "GI tract",
       "answer": "Crohn disease",
       "organ": "Ileum",
-      "image": "assets/cards/p011.jpg",
+      "image": "assets/cards/p011-1.jpg",
+      "images": [
+        "assets/cards/p011-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "gi-tract-crohn-disease-11"
     },
     {
@@ -108,7 +146,11 @@ window.PATH_GROSS_DATA = {
       "group": "Joint, soft tissue, and skin",
       "answer": "Desmoid-type fibromatosis",
       "organ": "Ileum",
-      "image": "assets/cards/p012.jpg",
+      "image": "assets/cards/p012-1.jpg",
+      "images": [
+        "assets/cards/p012-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "joint-soft-tissue-and-skin-desmoid-type-fibromatosis-12"
     },
     {
@@ -117,7 +159,12 @@ window.PATH_GROSS_DATA = {
       "group": "GI tract",
       "answer": "Familial adenomatous polyposis",
       "organ": "Colon / rectum",
-      "image": "assets/cards/p013.jpg",
+      "image": "assets/cards/p013-1.jpg",
+      "images": [
+        "assets/cards/p013-1.jpg",
+        "assets/cards/p013-2.jpg"
+      ],
+      "imageCount": 2,
       "slug": "gi-tract-familial-adenomatous-polyposis-13"
     },
     {
@@ -126,7 +173,11 @@ window.PATH_GROSS_DATA = {
       "group": "Joint, soft tissue, and skin",
       "answer": "Rhabdomyosarcoma",
       "organ": "Rectum / bladder",
-      "image": "assets/cards/p014.jpg",
+      "image": "assets/cards/p014-1.jpg",
+      "images": [
+        "assets/cards/p014-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "joint-soft-tissue-and-skin-rhabdomyosarcoma-14"
     },
     {
@@ -135,7 +186,12 @@ window.PATH_GROSS_DATA = {
       "group": "Cardiovascular system",
       "answer": "Cardiac myxoma",
       "organ": "Heart",
-      "image": "assets/cards/p016.jpg",
+      "image": "assets/cards/p016-1.jpg",
+      "images": [
+        "assets/cards/p016-1.jpg",
+        "assets/cards/p016-2.jpg"
+      ],
+      "imageCount": 2,
       "slug": "cardiovascular-system-cardiac-myxoma-16"
     },
     {
@@ -144,7 +200,12 @@ window.PATH_GROSS_DATA = {
       "group": "Cardiovascular system",
       "answer": "Dilated cardiomyopathy",
       "organ": "Heart",
-      "image": "assets/cards/p017.jpg",
+      "image": "assets/cards/p017-1.jpg",
+      "images": [
+        "assets/cards/p017-1.jpg",
+        "assets/cards/p017-2.jpg"
+      ],
+      "imageCount": 2,
       "slug": "cardiovascular-system-dilated-cardiomyopathy-17"
     },
     {
@@ -153,7 +214,12 @@ window.PATH_GROSS_DATA = {
       "group": "Cardiovascular system",
       "answer": "Myocardial infarction",
       "organ": "Heart",
-      "image": "assets/cards/p018.jpg",
+      "image": "assets/cards/p018-1.jpg",
+      "images": [
+        "assets/cards/p018-1.jpg",
+        "assets/cards/p018-2.jpg"
+      ],
+      "imageCount": 2,
       "slug": "cardiovascular-system-myocardial-infarction-18"
     },
     {
@@ -162,7 +228,12 @@ window.PATH_GROSS_DATA = {
       "group": "Kidney and urinary tract",
       "answer": "Hydronephrosis",
       "organ": "Kidney",
-      "image": "assets/cards/p020.jpg",
+      "image": "assets/cards/p020-1.jpg",
+      "images": [
+        "assets/cards/p020-1.jpg",
+        "assets/cards/p020-2.jpg"
+      ],
+      "imageCount": 2,
       "slug": "kidney-and-urinary-tract-hydronephrosis-20"
     },
     {
@@ -171,7 +242,12 @@ window.PATH_GROSS_DATA = {
       "group": "Kidney and urinary tract",
       "answer": "Non-invasive papillary urothelial carcinoma",
       "organ": "Kidney / renal pelvis",
-      "image": "assets/cards/p021.jpg",
+      "image": "assets/cards/p021-1.jpg",
+      "images": [
+        "assets/cards/p021-1.jpg",
+        "assets/cards/p021-2.jpg"
+      ],
+      "imageCount": 2,
       "slug": "kidney-and-urinary-tract-non-invasive-papillary-urothelial-carcinoma-21"
     },
     {
@@ -180,7 +256,12 @@ window.PATH_GROSS_DATA = {
       "group": "Kidney and urinary tract",
       "answer": "Renal cell carcinoma",
       "organ": "Kidney",
-      "image": "assets/cards/p022.jpg",
+      "image": "assets/cards/p022-1.jpg",
+      "images": [
+        "assets/cards/p022-1.jpg",
+        "assets/cards/p022-2.jpg"
+      ],
+      "imageCount": 2,
       "slug": "kidney-and-urinary-tract-renal-cell-carcinoma-22"
     },
     {
@@ -189,7 +270,12 @@ window.PATH_GROSS_DATA = {
       "group": "Kidney and urinary tract",
       "answer": "Staghorn nephrolithiasis",
       "organ": "Kidney",
-      "image": "assets/cards/p023.jpg",
+      "image": "assets/cards/p023-1.jpg",
+      "images": [
+        "assets/cards/p023-1.jpg",
+        "assets/cards/p023-2.jpg"
+      ],
+      "imageCount": 2,
       "slug": "kidney-and-urinary-tract-staghorn-nephrolithiasis-23"
     },
     {
@@ -198,7 +284,12 @@ window.PATH_GROSS_DATA = {
       "group": "Kidney and urinary tract",
       "answer": "Invasive urothelial carcinoma",
       "organ": "Renal pelvis",
-      "image": "assets/cards/p024.jpg",
+      "image": "assets/cards/p024-1.jpg",
+      "images": [
+        "assets/cards/p024-1.jpg",
+        "assets/cards/p024-2.jpg"
+      ],
+      "imageCount": 2,
       "slug": "kidney-and-urinary-tract-invasive-urothelial-carcinoma-24"
     },
     {
@@ -207,7 +298,11 @@ window.PATH_GROSS_DATA = {
       "group": "Kidney and urinary tract",
       "answer": "Adult polycystic kidney disease",
       "organ": "Kidney",
-      "image": "assets/cards/p025.jpg",
+      "image": "assets/cards/p025-1.jpg",
+      "images": [
+        "assets/cards/p025-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "kidney-and-urinary-tract-adult-polycystic-kidney-disease-25"
     },
     {
@@ -216,7 +311,11 @@ window.PATH_GROSS_DATA = {
       "group": "Kidney and urinary tract",
       "answer": "Adult polycystic kidney disease",
       "organ": "Kidney",
-      "image": "assets/cards/p026.jpg",
+      "image": "assets/cards/p026-1.jpg",
+      "images": [
+        "assets/cards/p026-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "kidney-and-urinary-tract-adult-polycystic-kidney-disease-26"
     },
     {
@@ -225,7 +324,12 @@ window.PATH_GROSS_DATA = {
       "group": "Liver and biliary tract",
       "answer": "Cholangiocarcinoma",
       "organ": "Liver",
-      "image": "assets/cards/p028.jpg",
+      "image": "assets/cards/p028-1.jpg",
+      "images": [
+        "assets/cards/p028-1.jpg",
+        "assets/cards/p028-2.jpg"
+      ],
+      "imageCount": 2,
       "slug": "liver-and-biliary-tract-cholangiocarcinoma-28"
     },
     {
@@ -234,7 +338,12 @@ window.PATH_GROSS_DATA = {
       "group": "Liver and biliary tract",
       "answer": "Focal nodular hyperplasia",
       "organ": "Liver",
-      "image": "assets/cards/p029.jpg",
+      "image": "assets/cards/p029-1.jpg",
+      "images": [
+        "assets/cards/p029-1.jpg",
+        "assets/cards/p029-2.jpg"
+      ],
+      "imageCount": 2,
       "slug": "liver-and-biliary-tract-focal-nodular-hyperplasia-29"
     },
     {
@@ -243,7 +352,12 @@ window.PATH_GROSS_DATA = {
       "group": "Liver and biliary tract",
       "answer": "Liver hemangioma",
       "organ": "Liver",
-      "image": "assets/cards/p030.jpg",
+      "image": "assets/cards/p030-1.jpg",
+      "images": [
+        "assets/cards/p030-1.jpg",
+        "assets/cards/p030-2.jpg"
+      ],
+      "imageCount": 2,
       "slug": "liver-and-biliary-tract-liver-hemangioma-30"
     },
     {
@@ -252,7 +366,12 @@ window.PATH_GROSS_DATA = {
       "group": "Liver and biliary tract",
       "answer": "Hepatocellular carcinoma",
       "organ": "Liver",
-      "image": "assets/cards/p031.jpg",
+      "image": "assets/cards/p031-1.jpg",
+      "images": [
+        "assets/cards/p031-1.jpg",
+        "assets/cards/p031-2.jpg"
+      ],
+      "imageCount": 2,
       "slug": "liver-and-biliary-tract-hepatocellular-carcinoma-31"
     },
     {
@@ -261,7 +380,12 @@ window.PATH_GROSS_DATA = {
       "group": "Liver and biliary tract",
       "answer": "Cirrhosis",
       "organ": "Liver",
-      "image": "assets/cards/p032.jpg",
+      "image": "assets/cards/p032-1.jpg",
+      "images": [
+        "assets/cards/p032-1.jpg",
+        "assets/cards/p032-2.jpg"
+      ],
+      "imageCount": 2,
       "slug": "liver-and-biliary-tract-cirrhosis-32"
     },
     {
@@ -270,7 +394,11 @@ window.PATH_GROSS_DATA = {
       "group": "Respiratory system",
       "answer": "Lung adenocarcinoma",
       "organ": "Lung",
-      "image": "assets/cards/p034.jpg",
+      "image": "assets/cards/p034-1.jpg",
+      "images": [
+        "assets/cards/p034-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "respiratory-system-lung-adenocarcinoma-34"
     },
     {
@@ -279,7 +407,12 @@ window.PATH_GROSS_DATA = {
       "group": "Respiratory system",
       "answer": "Bronchiectasis",
       "organ": "Lung",
-      "image": "assets/cards/p035.jpg",
+      "image": "assets/cards/p035-1.jpg",
+      "images": [
+        "assets/cards/p035-1.jpg",
+        "assets/cards/p035-2.jpg"
+      ],
+      "imageCount": 2,
       "slug": "respiratory-system-bronchiectasis-35"
     },
     {
@@ -288,7 +421,11 @@ window.PATH_GROSS_DATA = {
       "group": "Respiratory system",
       "answer": "Bronchiectasis",
       "organ": "Lung",
-      "image": "assets/cards/p036.jpg",
+      "image": "assets/cards/p036-1.jpg",
+      "images": [
+        "assets/cards/p036-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "respiratory-system-bronchiectasis-36"
     },
     {
@@ -297,7 +434,12 @@ window.PATH_GROSS_DATA = {
       "group": "Respiratory system",
       "answer": "Mesothelioma",
       "organ": "Pleura",
-      "image": "assets/cards/p037.jpg",
+      "image": "assets/cards/p037-1.jpg",
+      "images": [
+        "assets/cards/p037-1.jpg",
+        "assets/cards/p037-2.jpg"
+      ],
+      "imageCount": 2,
       "slug": "respiratory-system-mesothelioma-37"
     },
     {
@@ -306,7 +448,12 @@ window.PATH_GROSS_DATA = {
       "group": "Respiratory system",
       "answer": "Lung squamous cell carcinoma",
       "organ": "Lung",
-      "image": "assets/cards/p038.jpg",
+      "image": "assets/cards/p038-1.jpg",
+      "images": [
+        "assets/cards/p038-1.jpg",
+        "assets/cards/p038-2.jpg"
+      ],
+      "imageCount": 2,
       "slug": "respiratory-system-lung-squamous-cell-carcinoma-38"
     },
     {
@@ -315,7 +462,12 @@ window.PATH_GROSS_DATA = {
       "group": "Respiratory system",
       "answer": "Tuberculosis",
       "organ": "Lung",
-      "image": "assets/cards/p039.jpg",
+      "image": "assets/cards/p039-1.jpg",
+      "images": [
+        "assets/cards/p039-1.jpg",
+        "assets/cards/p039-2.jpg"
+      ],
+      "imageCount": 2,
       "slug": "respiratory-system-tuberculosis-39"
     },
     {
@@ -324,7 +476,12 @@ window.PATH_GROSS_DATA = {
       "group": "Respiratory system",
       "answer": "Pulmonary hamartoma",
       "organ": "Lung",
-      "image": "assets/cards/p040.jpg",
+      "image": "assets/cards/p040-1.jpg",
+      "images": [
+        "assets/cards/p040-1.jpg",
+        "assets/cards/p040-2.jpg"
+      ],
+      "imageCount": 2,
       "slug": "respiratory-system-pulmonary-hamartoma-40"
     },
     {
@@ -333,7 +490,11 @@ window.PATH_GROSS_DATA = {
       "group": "Respiratory system",
       "answer": "Mesothelioma",
       "organ": "Pleura",
-      "image": "assets/cards/p041.jpg",
+      "image": "assets/cards/p041-1.jpg",
+      "images": [
+        "assets/cards/p041-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "respiratory-system-mesothelioma-41"
     },
     {
@@ -342,7 +503,11 @@ window.PATH_GROSS_DATA = {
       "group": "Female genital system",
       "answer": "Peritoneal / omental carcinomatosis",
       "organ": "Omentum",
-      "image": "assets/cards/p043.jpg",
+      "image": "assets/cards/p043-1.jpg",
+      "images": [
+        "assets/cards/p043-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "female-genital-system-peritoneal-omental-carcinomatosis-43"
     },
     {
@@ -351,7 +516,11 @@ window.PATH_GROSS_DATA = {
       "group": "Female genital system",
       "answer": "Ovarian fibroma",
       "organ": "Ovary",
-      "image": "assets/cards/p044.jpg",
+      "image": "assets/cards/p044-1.jpg",
+      "images": [
+        "assets/cards/p044-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "female-genital-system-ovarian-fibroma-44"
     },
     {
@@ -360,7 +529,12 @@ window.PATH_GROSS_DATA = {
       "group": "Female genital system",
       "answer": "Ovarian fibrothecoma",
       "organ": "Ovary",
-      "image": "assets/cards/p045.jpg",
+      "image": "assets/cards/p045-1.jpg",
+      "images": [
+        "assets/cards/p045-1.jpg",
+        "assets/cards/p045-2.jpg"
+      ],
+      "imageCount": 2,
       "slug": "female-genital-system-ovarian-fibrothecoma-45"
     },
     {
@@ -369,7 +543,12 @@ window.PATH_GROSS_DATA = {
       "group": "Female genital system",
       "answer": "Mature teratoma",
       "organ": "Ovary",
-      "image": "assets/cards/p046.jpg",
+      "image": "assets/cards/p046-1.jpg",
+      "images": [
+        "assets/cards/p046-1.jpg",
+        "assets/cards/p046-2.jpg"
+      ],
+      "imageCount": 2,
       "slug": "female-genital-system-mature-teratoma-46"
     },
     {
@@ -378,7 +557,11 @@ window.PATH_GROSS_DATA = {
       "group": "Female genital system",
       "answer": "Mature teratoma",
       "organ": "Ovary",
-      "image": "assets/cards/p047.jpg",
+      "image": "assets/cards/p047-1.jpg",
+      "images": [
+        "assets/cards/p047-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "female-genital-system-mature-teratoma-47"
     },
     {
@@ -387,7 +570,12 @@ window.PATH_GROSS_DATA = {
       "group": "Female genital system",
       "answer": "Ovarian serous cystadenoma",
       "organ": "Ovary",
-      "image": "assets/cards/p048.jpg",
+      "image": "assets/cards/p048-1.jpg",
+      "images": [
+        "assets/cards/p048-1.jpg",
+        "assets/cards/p048-2.jpg"
+      ],
+      "imageCount": 2,
       "slug": "female-genital-system-ovarian-serous-cystadenoma-48"
     },
     {
@@ -396,7 +584,12 @@ window.PATH_GROSS_DATA = {
       "group": "Female genital system",
       "answer": "Ovarian serous carcinoma",
       "organ": "Ovary",
-      "image": "assets/cards/p049.jpg",
+      "image": "assets/cards/p049-1.jpg",
+      "images": [
+        "assets/cards/p049-1.jpg",
+        "assets/cards/p049-2.jpg"
+      ],
+      "imageCount": 2,
       "slug": "female-genital-system-ovarian-serous-carcinoma-49"
     },
     {
@@ -405,7 +598,11 @@ window.PATH_GROSS_DATA = {
       "group": "Female genital system",
       "answer": "Ovarian serous carcinoma",
       "organ": "Ovary",
-      "image": "assets/cards/p050.jpg",
+      "image": "assets/cards/p050-1.jpg",
+      "images": [
+        "assets/cards/p050-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "female-genital-system-ovarian-serous-carcinoma-50"
     },
     {
@@ -414,7 +611,12 @@ window.PATH_GROSS_DATA = {
       "group": "Female genital system",
       "answer": "Ovarian mucinous cystadenoma",
       "organ": "Ovary",
-      "image": "assets/cards/p051.jpg",
+      "image": "assets/cards/p051-1.jpg",
+      "images": [
+        "assets/cards/p051-1.jpg",
+        "assets/cards/p051-2.jpg"
+      ],
+      "imageCount": 2,
       "slug": "female-genital-system-ovarian-mucinous-cystadenoma-51"
     },
     {
@@ -423,7 +625,11 @@ window.PATH_GROSS_DATA = {
       "group": "Female genital system",
       "answer": "Ovarian torsion",
       "organ": "Ovary",
-      "image": "assets/cards/p052.jpg",
+      "image": "assets/cards/p052-1.jpg",
+      "images": [
+        "assets/cards/p052-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "female-genital-system-ovarian-torsion-52"
     },
     {
@@ -432,7 +638,12 @@ window.PATH_GROSS_DATA = {
       "group": "Female genital system",
       "answer": "Endometriotic cyst",
       "organ": "Ovary",
-      "image": "assets/cards/p053.jpg",
+      "image": "assets/cards/p053-1.jpg",
+      "images": [
+        "assets/cards/p053-1.jpg",
+        "assets/cards/p053-2.jpg"
+      ],
+      "imageCount": 2,
       "slug": "female-genital-system-endometriotic-cyst-53"
     },
     {
@@ -441,7 +652,12 @@ window.PATH_GROSS_DATA = {
       "group": "Female genital system",
       "answer": "Ovarian / fallopian tube clear cell carcinoma",
       "organ": "Ovary / fallopian tube",
-      "image": "assets/cards/p054.jpg",
+      "image": "assets/cards/p054-1.jpg",
+      "images": [
+        "assets/cards/p054-1.jpg",
+        "assets/cards/p054-2.jpg"
+      ],
+      "imageCount": 2,
       "slug": "female-genital-system-ovarian-fallopian-tube-clear-cell-carcinoma-54"
     },
     {
@@ -450,7 +666,12 @@ window.PATH_GROSS_DATA = {
       "group": "Female genital system",
       "answer": "Molar pregnancy",
       "organ": "Placenta",
-      "image": "assets/cards/p055.jpg",
+      "image": "assets/cards/p055-1.jpg",
+      "images": [
+        "assets/cards/p055-1.jpg",
+        "assets/cards/p055-2.jpg"
+      ],
+      "imageCount": 2,
       "slug": "female-genital-system-molar-pregnancy-55"
     },
     {
@@ -459,7 +680,12 @@ window.PATH_GROSS_DATA = {
       "group": "Female genital system",
       "answer": "Placenta accreta",
       "organ": "Placenta",
-      "image": "assets/cards/p056.jpg",
+      "image": "assets/cards/p056-1.jpg",
+      "images": [
+        "assets/cards/p056-1.jpg",
+        "assets/cards/p056-2.jpg"
+      ],
+      "imageCount": 2,
       "slug": "female-genital-system-placenta-accreta-56"
     },
     {
@@ -468,7 +694,12 @@ window.PATH_GROSS_DATA = {
       "group": "Female genital system",
       "answer": "Adenomyosis",
       "organ": "Uterus",
-      "image": "assets/cards/p057.jpg",
+      "image": "assets/cards/p057-1.jpg",
+      "images": [
+        "assets/cards/p057-1.jpg",
+        "assets/cards/p057-2.jpg"
+      ],
+      "imageCount": 2,
       "slug": "female-genital-system-adenomyosis-57"
     },
     {
@@ -477,7 +708,12 @@ window.PATH_GROSS_DATA = {
       "group": "Female genital system",
       "answer": "Endometrioid adenocarcinoma / endometrial carcinoma",
       "organ": "Uterus",
-      "image": "assets/cards/p058.jpg",
+      "image": "assets/cards/p058-1.jpg",
+      "images": [
+        "assets/cards/p058-1.jpg",
+        "assets/cards/p058-2.jpg"
+      ],
+      "imageCount": 2,
       "slug": "female-genital-system-endometrioid-adenocarcinoma-endometrial-carcinoma-58"
     },
     {
@@ -486,7 +722,12 @@ window.PATH_GROSS_DATA = {
       "group": "Female genital system",
       "answer": "Cervical squamous cell carcinoma",
       "organ": "Uterus / cervix",
-      "image": "assets/cards/p059.jpg",
+      "image": "assets/cards/p059-1.jpg",
+      "images": [
+        "assets/cards/p059-1.jpg",
+        "assets/cards/p059-2.jpg"
+      ],
+      "imageCount": 2,
       "slug": "female-genital-system-cervical-squamous-cell-carcinoma-59"
     },
     {
@@ -495,7 +736,12 @@ window.PATH_GROSS_DATA = {
       "group": "Female genital system",
       "answer": "Leiomyoma",
       "organ": "Uterus",
-      "image": "assets/cards/p060.jpg",
+      "image": "assets/cards/p060-1.jpg",
+      "images": [
+        "assets/cards/p060-1.jpg",
+        "assets/cards/p060-2.jpg"
+      ],
+      "imageCount": 2,
       "slug": "female-genital-system-leiomyoma-60"
     },
     {
@@ -504,7 +750,11 @@ window.PATH_GROSS_DATA = {
       "group": "Female genital system",
       "answer": "Cervical squamous cell carcinoma",
       "organ": "Uterus / cervix",
-      "image": "assets/cards/p061.jpg",
+      "image": "assets/cards/p061-1.jpg",
+      "images": [
+        "assets/cards/p061-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "female-genital-system-cervical-squamous-cell-carcinoma-61"
     },
     {
@@ -513,7 +763,11 @@ window.PATH_GROSS_DATA = {
       "group": "Breast",
       "answer": "Breast invasive carcinoma",
       "organ": "Breast",
-      "image": "assets/cards/p063.jpg",
+      "image": "assets/cards/p063-1.jpg",
+      "images": [
+        "assets/cards/p063-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "breast-breast-invasive-carcinoma-63"
     },
     {
@@ -522,7 +776,11 @@ window.PATH_GROSS_DATA = {
       "group": "Breast",
       "answer": "Complex fibroadenoma",
       "organ": "Breast",
-      "image": "assets/cards/p064.jpg",
+      "image": "assets/cards/p064-1.jpg",
+      "images": [
+        "assets/cards/p064-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "breast-complex-fibroadenoma-64"
     },
     {
@@ -531,7 +789,11 @@ window.PATH_GROSS_DATA = {
       "group": "Breast",
       "answer": "Phyllodes tumor",
       "organ": "Breast",
-      "image": "assets/cards/p065.jpg",
+      "image": "assets/cards/p065-1.jpg",
+      "images": [
+        "assets/cards/p065-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "breast-phyllodes-tumor-65"
     },
     {
@@ -540,7 +802,12 @@ window.PATH_GROSS_DATA = {
       "group": "Male genital system",
       "answer": "Prostate adenocarcinoma",
       "organ": "Prostate",
-      "image": "assets/cards/p067.jpg",
+      "image": "assets/cards/p067-1.jpg",
+      "images": [
+        "assets/cards/p067-1.jpg",
+        "assets/cards/p067-2.jpg"
+      ],
+      "imageCount": 2,
       "slug": "male-genital-system-prostate-adenocarcinoma-67"
     },
     {
@@ -549,7 +816,12 @@ window.PATH_GROSS_DATA = {
       "group": "Male genital system",
       "answer": "Benign prostatic hyperplasia",
       "organ": "Prostate",
-      "image": "assets/cards/p068.jpg",
+      "image": "assets/cards/p068-1.jpg",
+      "images": [
+        "assets/cards/p068-1.jpg",
+        "assets/cards/p068-2.jpg"
+      ],
+      "imageCount": 2,
       "slug": "male-genital-system-benign-prostatic-hyperplasia-68"
     },
     {
@@ -558,7 +830,12 @@ window.PATH_GROSS_DATA = {
       "group": "Male genital system",
       "answer": "Seminoma",
       "organ": "Testis",
-      "image": "assets/cards/p069.jpg",
+      "image": "assets/cards/p069-1.jpg",
+      "images": [
+        "assets/cards/p069-1.jpg",
+        "assets/cards/p069-2.jpg"
+      ],
+      "imageCount": 2,
       "slug": "male-genital-system-seminoma-69"
     },
     {
@@ -567,7 +844,12 @@ window.PATH_GROSS_DATA = {
       "group": "Pancreas",
       "answer": "Pancreatic ductal adenocarcinoma",
       "organ": "Pancreas",
-      "image": "assets/cards/p071.jpg",
+      "image": "assets/cards/p071-1.jpg",
+      "images": [
+        "assets/cards/p071-1.jpg",
+        "assets/cards/p071-2.jpg"
+      ],
+      "imageCount": 2,
       "slug": "pancreas-pancreatic-ductal-adenocarcinoma-71"
     },
     {
@@ -576,7 +858,12 @@ window.PATH_GROSS_DATA = {
       "group": "Pancreas",
       "answer": "Pancreatic neuroendocrine tumor",
       "organ": "Pancreas",
-      "image": "assets/cards/p072.jpg",
+      "image": "assets/cards/p072-1.jpg",
+      "images": [
+        "assets/cards/p072-1.jpg",
+        "assets/cards/p072-2.jpg"
+      ],
+      "imageCount": 2,
       "slug": "pancreas-pancreatic-neuroendocrine-tumor-72"
     },
     {
@@ -585,7 +872,12 @@ window.PATH_GROSS_DATA = {
       "group": "Pancreas",
       "answer": "Intraductal papillary mucinous neoplasm (IPMN)",
       "organ": "Pancreas",
-      "image": "assets/cards/p073.jpg",
+      "image": "assets/cards/p073-1.jpg",
+      "images": [
+        "assets/cards/p073-1.jpg",
+        "assets/cards/p073-2.jpg"
+      ],
+      "imageCount": 2,
       "slug": "pancreas-intraductal-papillary-mucinous-neoplasm-ipmn-73"
     },
     {
@@ -594,7 +886,12 @@ window.PATH_GROSS_DATA = {
       "group": "Pancreas",
       "answer": "Pancreatic serous cystadenoma",
       "organ": "Pancreas",
-      "image": "assets/cards/p074.jpg",
+      "image": "assets/cards/p074-1.jpg",
+      "images": [
+        "assets/cards/p074-1.jpg",
+        "assets/cards/p074-2.jpg"
+      ],
+      "imageCount": 2,
       "slug": "pancreas-pancreatic-serous-cystadenoma-74"
     },
     {
@@ -603,7 +900,12 @@ window.PATH_GROSS_DATA = {
       "group": "Pancreas",
       "answer": "Pancreatic mucinous cystic neoplasm",
       "organ": "Pancreas",
-      "image": "assets/cards/p075.jpg",
+      "image": "assets/cards/p075-1.jpg",
+      "images": [
+        "assets/cards/p075-1.jpg",
+        "assets/cards/p075-2.jpg"
+      ],
+      "imageCount": 2,
       "slug": "pancreas-pancreatic-mucinous-cystic-neoplasm-75"
     },
     {
@@ -612,7 +914,12 @@ window.PATH_GROSS_DATA = {
       "group": "Head and neck",
       "answer": "Pleomorphic adenoma",
       "organ": "Salivary gland",
-      "image": "assets/cards/p076.jpg",
+      "image": "assets/cards/p076-1.jpg",
+      "images": [
+        "assets/cards/p076-1.jpg",
+        "assets/cards/p076-2.jpg"
+      ],
+      "imageCount": 2,
       "slug": "head-and-neck-pleomorphic-adenoma-76"
     },
     {
@@ -621,7 +928,12 @@ window.PATH_GROSS_DATA = {
       "group": "Head and neck",
       "answer": "Warthin tumor",
       "organ": "Parotid gland",
-      "image": "assets/cards/p077.jpg",
+      "image": "assets/cards/p077-1.jpg",
+      "images": [
+        "assets/cards/p077-1.jpg",
+        "assets/cards/p077-2.jpg"
+      ],
+      "imageCount": 2,
       "slug": "head-and-neck-warthin-tumor-77"
     },
     {
@@ -630,7 +942,11 @@ window.PATH_GROSS_DATA = {
       "group": "Endocrine system",
       "answer": "Papillary thyroid carcinoma",
       "organ": "Thyroid",
-      "image": "assets/cards/p078.jpg",
+      "image": "assets/cards/p078-1.jpg",
+      "images": [
+        "assets/cards/p078-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "endocrine-system-papillary-thyroid-carcinoma-78"
     },
     {
@@ -639,7 +955,11 @@ window.PATH_GROSS_DATA = {
       "group": "Endocrine system",
       "answer": "Medullary thyroid carcinoma",
       "organ": "Thyroid",
-      "image": "assets/cards/p079.jpg",
+      "image": "assets/cards/p079-1.jpg",
+      "images": [
+        "assets/cards/p079-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "endocrine-system-medullary-thyroid-carcinoma-79"
     },
     {
@@ -648,7 +968,11 @@ window.PATH_GROSS_DATA = {
       "group": "Endocrine system",
       "answer": "Multinodular goiter",
       "organ": "Thyroid",
-      "image": "assets/cards/p080.jpg",
+      "image": "assets/cards/p080-1.jpg",
+      "images": [
+        "assets/cards/p080-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "endocrine-system-multinodular-goiter-80"
     },
     {
@@ -657,7 +981,11 @@ window.PATH_GROSS_DATA = {
       "group": "Endocrine system",
       "answer": "Graves disease",
       "organ": "Thyroid",
-      "image": "assets/cards/p081.jpg",
+      "image": "assets/cards/p081-1.jpg",
+      "images": [
+        "assets/cards/p081-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "endocrine-system-graves-disease-81"
     },
     {
@@ -666,7 +994,11 @@ window.PATH_GROSS_DATA = {
       "group": "Endocrine system",
       "answer": "Adrenocortical adenoma",
       "organ": "Adrenal gland",
-      "image": "assets/cards/p082.jpg",
+      "image": "assets/cards/p082-1.jpg",
+      "images": [
+        "assets/cards/p082-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "endocrine-system-adrenocortical-adenoma-82"
     },
     {
@@ -675,7 +1007,11 @@ window.PATH_GROSS_DATA = {
       "group": "Endocrine system",
       "answer": "Pheochromocytoma",
       "organ": "Adrenal gland",
-      "image": "assets/cards/p083.jpg",
+      "image": "assets/cards/p083-1.jpg",
+      "images": [
+        "assets/cards/p083-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "endocrine-system-pheochromocytoma-83"
     },
     {
@@ -684,7 +1020,11 @@ window.PATH_GROSS_DATA = {
       "group": "Endocrine system",
       "answer": "Pheochromocytoma",
       "organ": "Adrenal gland",
-      "image": "assets/cards/p084.jpg",
+      "image": "assets/cards/p084-1.jpg",
+      "images": [
+        "assets/cards/p084-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "endocrine-system-pheochromocytoma-84"
     },
     {
@@ -693,7 +1033,11 @@ window.PATH_GROSS_DATA = {
       "group": "Hematopoietic system",
       "answer": "Splenic lymphoma",
       "organ": "Spleen",
-      "image": "assets/cards/p086.jpg",
+      "image": "assets/cards/p086-1.jpg",
+      "images": [
+        "assets/cards/p086-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "hematopoietic-system-splenic-lymphoma-86"
     },
     {
@@ -702,7 +1046,11 @@ window.PATH_GROSS_DATA = {
       "group": "Hematopoietic system",
       "answer": "Splenic lymphoma",
       "organ": "Spleen",
-      "image": "assets/cards/p087.jpg",
+      "image": "assets/cards/p087-1.jpg",
+      "images": [
+        "assets/cards/p087-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "hematopoietic-system-splenic-lymphoma-87"
     },
     {
@@ -711,7 +1059,11 @@ window.PATH_GROSS_DATA = {
       "group": "Hematopoietic system",
       "answer": "Hairy cell leukemia",
       "organ": "Spleen",
-      "image": "assets/cards/p088.jpg",
+      "image": "assets/cards/p088-1.jpg",
+      "images": [
+        "assets/cards/p088-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "hematopoietic-system-hairy-cell-leukemia-88"
     },
     {
@@ -720,7 +1072,11 @@ window.PATH_GROSS_DATA = {
       "group": "Hematopoietic system",
       "answer": "Hairy cell leukemia",
       "organ": "Spleen",
-      "image": "assets/cards/p089.jpg",
+      "image": "assets/cards/p089-1.jpg",
+      "images": [
+        "assets/cards/p089-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "hematopoietic-system-hairy-cell-leukemia-89"
     },
     {
@@ -729,7 +1085,11 @@ window.PATH_GROSS_DATA = {
       "group": "Hematopoietic system",
       "answer": "Splenic infarction",
       "organ": "Spleen",
-      "image": "assets/cards/p090.jpg",
+      "image": "assets/cards/p090-1.jpg",
+      "images": [
+        "assets/cards/p090-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "hematopoietic-system-splenic-infarction-90"
     },
     {
@@ -738,7 +1098,11 @@ window.PATH_GROSS_DATA = {
       "group": "Hematopoietic system",
       "answer": "Splenic lymphoma",
       "organ": "Spleen",
-      "image": "assets/cards/p091.jpg",
+      "image": "assets/cards/p091-1.jpg",
+      "images": [
+        "assets/cards/p091-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "hematopoietic-system-splenic-lymphoma-91"
     },
     {
@@ -747,7 +1111,11 @@ window.PATH_GROSS_DATA = {
       "group": "Hematopoietic system",
       "answer": "Splenic low-grade B-cell lymphoma",
       "organ": "Spleen",
-      "image": "assets/cards/p092.jpg",
+      "image": "assets/cards/p092-1.jpg",
+      "images": [
+        "assets/cards/p092-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "hematopoietic-system-splenic-low-grade-b-cell-lymphoma-92"
     },
     {
@@ -756,7 +1124,11 @@ window.PATH_GROSS_DATA = {
       "group": "Hematopoietic system",
       "answer": "Splenic hemangioma",
       "organ": "Spleen",
-      "image": "assets/cards/p093.jpg",
+      "image": "assets/cards/p093-1.jpg",
+      "images": [
+        "assets/cards/p093-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "hematopoietic-system-splenic-hemangioma-93"
     },
     {
@@ -765,7 +1137,11 @@ window.PATH_GROSS_DATA = {
       "group": "Hematopoietic system",
       "answer": "Immunoblastic lymphoma",
       "organ": "Lymphoid tissue",
-      "image": "assets/cards/p094.jpg",
+      "image": "assets/cards/p094-1.jpg",
+      "images": [
+        "assets/cards/p094-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "hematopoietic-system-immunoblastic-lymphoma-94"
     },
     {
@@ -774,7 +1150,11 @@ window.PATH_GROSS_DATA = {
       "group": "Hematopoietic system",
       "answer": "Tonsillar mantle cell lymphoma",
       "organ": "Tonsil",
-      "image": "assets/cards/p095.jpg",
+      "image": "assets/cards/p095-1.jpg",
+      "images": [
+        "assets/cards/p095-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "hematopoietic-system-tonsillar-mantle-cell-lymphoma-95"
     },
     {
@@ -783,7 +1163,11 @@ window.PATH_GROSS_DATA = {
       "group": "Hematopoietic system",
       "answer": "Mediastinal Hodgkin lymphoma",
       "organ": "Mediastinum",
-      "image": "assets/cards/p096.jpg",
+      "image": "assets/cards/p096-1.jpg",
+      "images": [
+        "assets/cards/p096-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "hematopoietic-system-mediastinal-hodgkin-lymphoma-96"
     },
     {
@@ -792,7 +1176,11 @@ window.PATH_GROSS_DATA = {
       "group": "Joint, soft tissue, and skin",
       "answer": "Gouty tophi",
       "organ": "Joint / soft tissue",
-      "image": "assets/cards/p098.jpg",
+      "image": "assets/cards/p098-1.jpg",
+      "images": [
+        "assets/cards/p098-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "joint-soft-tissue-and-skin-gouty-tophi-98"
     },
     {
@@ -801,7 +1189,11 @@ window.PATH_GROSS_DATA = {
       "group": "Bone",
       "answer": "Chondrosarcoma",
       "organ": "Rib",
-      "image": "assets/cards/p099.jpg",
+      "image": "assets/cards/p099-1.jpg",
+      "images": [
+        "assets/cards/p099-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "bone-chondrosarcoma-99"
     },
     {
@@ -810,7 +1202,11 @@ window.PATH_GROSS_DATA = {
       "group": "Bone",
       "answer": "Chondrosarcoma",
       "organ": "Bone",
-      "image": "assets/cards/p100.jpg",
+      "image": "assets/cards/p100-1.jpg",
+      "images": [
+        "assets/cards/p100-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "bone-chondrosarcoma-100"
     },
     {
@@ -819,7 +1215,11 @@ window.PATH_GROSS_DATA = {
       "group": "Bone",
       "answer": "Chondrosarcoma",
       "organ": "Bone",
-      "image": "assets/cards/p101.jpg",
+      "image": "assets/cards/p101-1.jpg",
+      "images": [
+        "assets/cards/p101-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "bone-chondrosarcoma-101"
     },
     {
@@ -828,7 +1228,11 @@ window.PATH_GROSS_DATA = {
       "group": "Bone",
       "answer": "Chondrosarcoma",
       "organ": "Bone",
-      "image": "assets/cards/p102.jpg",
+      "image": "assets/cards/p102-1.jpg",
+      "images": [
+        "assets/cards/p102-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "bone-chondrosarcoma-102"
     },
     {
@@ -837,7 +1241,11 @@ window.PATH_GROSS_DATA = {
       "group": "Bone",
       "answer": "Osteochondroma",
       "organ": "Bone",
-      "image": "assets/cards/p103.jpg",
+      "image": "assets/cards/p103-1.jpg",
+      "images": [
+        "assets/cards/p103-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "bone-osteochondroma-103"
     },
     {
@@ -846,7 +1254,11 @@ window.PATH_GROSS_DATA = {
       "group": "Bone",
       "answer": "Osteochondroma",
       "organ": "Femur",
-      "image": "assets/cards/p104.jpg",
+      "image": "assets/cards/p104-1.jpg",
+      "images": [
+        "assets/cards/p104-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "bone-osteochondroma-104"
     },
     {
@@ -855,7 +1267,11 @@ window.PATH_GROSS_DATA = {
       "group": "Bone",
       "answer": "Osteochondroma",
       "organ": "Bone",
-      "image": "assets/cards/p105.jpg",
+      "image": "assets/cards/p105-1.jpg",
+      "images": [
+        "assets/cards/p105-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "bone-osteochondroma-105"
     },
     {
@@ -864,7 +1280,11 @@ window.PATH_GROSS_DATA = {
       "group": "Bone",
       "answer": "Osteosarcoma",
       "organ": "Bone",
-      "image": "assets/cards/p106.jpg",
+      "image": "assets/cards/p106-1.jpg",
+      "images": [
+        "assets/cards/p106-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "bone-osteosarcoma-106"
     },
     {
@@ -873,7 +1293,11 @@ window.PATH_GROSS_DATA = {
       "group": "Bone",
       "answer": "Osteosarcoma",
       "organ": "Proximal tibia",
-      "image": "assets/cards/p107.jpg",
+      "image": "assets/cards/p107-1.jpg",
+      "images": [
+        "assets/cards/p107-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "bone-osteosarcoma-107"
     },
     {
@@ -882,7 +1306,11 @@ window.PATH_GROSS_DATA = {
       "group": "Bone",
       "answer": "Osteosarcoma",
       "organ": "Radius",
-      "image": "assets/cards/p108.jpg",
+      "image": "assets/cards/p108-1.jpg",
+      "images": [
+        "assets/cards/p108-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "bone-osteosarcoma-108"
     },
     {
@@ -891,7 +1319,11 @@ window.PATH_GROSS_DATA = {
       "group": "Bone",
       "answer": "Giant cell tumor of bone",
       "organ": "Bone",
-      "image": "assets/cards/p109.jpg",
+      "image": "assets/cards/p109-1.jpg",
+      "images": [
+        "assets/cards/p109-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "bone-giant-cell-tumor-of-bone-109"
     },
     {
@@ -900,7 +1332,11 @@ window.PATH_GROSS_DATA = {
       "group": "Bone",
       "answer": "Avascular necrosis",
       "organ": "Femoral head",
-      "image": "assets/cards/p110.jpg",
+      "image": "assets/cards/p110-1.jpg",
+      "images": [
+        "assets/cards/p110-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "bone-avascular-necrosis-110"
     },
     {
@@ -909,7 +1345,11 @@ window.PATH_GROSS_DATA = {
       "group": "Bone",
       "answer": "Fibrous dysplasia",
       "organ": "Rib",
-      "image": "assets/cards/p111.jpg",
+      "image": "assets/cards/p111-1.jpg",
+      "images": [
+        "assets/cards/p111-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "bone-fibrous-dysplasia-111"
     },
     {
@@ -918,7 +1358,11 @@ window.PATH_GROSS_DATA = {
       "group": "Joint, soft tissue, and skin",
       "answer": "Lipoma",
       "organ": "Soft tissue",
-      "image": "assets/cards/p114.jpg",
+      "image": "assets/cards/p114-1.jpg",
+      "images": [
+        "assets/cards/p114-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "joint-soft-tissue-and-skin-lipoma-114"
     },
     {
@@ -927,7 +1371,11 @@ window.PATH_GROSS_DATA = {
       "group": "Joint, soft tissue, and skin",
       "answer": "Liposarcoma",
       "organ": "Soft tissue",
-      "image": "assets/cards/p115.jpg",
+      "image": "assets/cards/p115-1.jpg",
+      "images": [
+        "assets/cards/p115-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "joint-soft-tissue-and-skin-liposarcoma-115"
     },
     {
@@ -936,7 +1384,11 @@ window.PATH_GROSS_DATA = {
       "group": "Joint, soft tissue, and skin",
       "answer": "Neurofibroma",
       "organ": "Pelvic soft tissue",
-      "image": "assets/cards/p116.jpg",
+      "image": "assets/cards/p116-1.jpg",
+      "images": [
+        "assets/cards/p116-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "joint-soft-tissue-and-skin-neurofibroma-116"
     },
     {
@@ -945,7 +1397,11 @@ window.PATH_GROSS_DATA = {
       "group": "Nervous system",
       "answer": "Hydrocephalus",
       "organ": "Cerebrum",
-      "image": "assets/cards/p118.jpg",
+      "image": "assets/cards/p118-1.jpg",
+      "images": [
+        "assets/cards/p118-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "nervous-system-hydrocephalus-118"
     },
     {
@@ -954,7 +1410,11 @@ window.PATH_GROSS_DATA = {
       "group": "Nervous system",
       "answer": "Cerebral metastatic carcinoma",
       "organ": "Cerebrum",
-      "image": "assets/cards/p119.jpg",
+      "image": "assets/cards/p119-1.jpg",
+      "images": [
+        "assets/cards/p119-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "nervous-system-cerebral-metastatic-carcinoma-119"
     },
     {
@@ -963,7 +1423,11 @@ window.PATH_GROSS_DATA = {
       "group": "Nervous system",
       "answer": "Glioblastoma multiforme",
       "organ": "Cerebrum",
-      "image": "assets/cards/p120.jpg",
+      "image": "assets/cards/p120-1.jpg",
+      "images": [
+        "assets/cards/p120-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "nervous-system-glioblastoma-multiforme-120"
     },
     {
@@ -972,7 +1436,11 @@ window.PATH_GROSS_DATA = {
       "group": "Nervous system",
       "answer": "Normal cerebrum",
       "organ": "Cerebrum",
-      "image": "assets/cards/p121.jpg",
+      "image": "assets/cards/p121-1.jpg",
+      "images": [
+        "assets/cards/p121-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "nervous-system-normal-cerebrum-121"
     },
     {
@@ -981,7 +1449,11 @@ window.PATH_GROSS_DATA = {
       "group": "Nervous system",
       "answer": "Intraventricular hemorrhage",
       "organ": "Cerebrum",
-      "image": "assets/cards/p122.jpg",
+      "image": "assets/cards/p122-1.jpg",
+      "images": [
+        "assets/cards/p122-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "nervous-system-intraventricular-hemorrhage-122"
     },
     {
@@ -990,7 +1462,11 @@ window.PATH_GROSS_DATA = {
       "group": "Nervous system",
       "answer": "Glioblastoma multiforme",
       "organ": "Cerebrum",
-      "image": "assets/cards/p123.jpg",
+      "image": "assets/cards/p123-1.jpg",
+      "images": [
+        "assets/cards/p123-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "nervous-system-glioblastoma-multiforme-123"
     },
     {
@@ -999,7 +1475,11 @@ window.PATH_GROSS_DATA = {
       "group": "Nervous system",
       "answer": "Oligodendroglioma",
       "organ": "Cerebrum",
-      "image": "assets/cards/p124.jpg",
+      "image": "assets/cards/p124-1.jpg",
+      "images": [
+        "assets/cards/p124-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "nervous-system-oligodendroglioma-124"
     },
     {
@@ -1008,7 +1488,11 @@ window.PATH_GROSS_DATA = {
       "group": "Nervous system",
       "answer": "Intraventricular and intracerebral hemorrhage",
       "organ": "Cerebrum",
-      "image": "assets/cards/p125.jpg",
+      "image": "assets/cards/p125-1.jpg",
+      "images": [
+        "assets/cards/p125-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "nervous-system-intraventricular-and-intracerebral-hemorrhage-125"
     },
     {
@@ -1017,7 +1501,11 @@ window.PATH_GROSS_DATA = {
       "group": "Nervous system",
       "answer": "Meningioma",
       "organ": "Meninx",
-      "image": "assets/cards/p126.jpg",
+      "image": "assets/cards/p126-1.jpg",
+      "images": [
+        "assets/cards/p126-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "nervous-system-meningioma-126"
     },
     {
@@ -1026,7 +1514,11 @@ window.PATH_GROSS_DATA = {
       "group": "Eye",
       "answer": "Retinoblastoma",
       "organ": "Eye",
-      "image": "assets/cards/p128.jpg",
+      "image": "assets/cards/p128-1.jpg",
+      "images": [
+        "assets/cards/p128-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "eye-retinoblastoma-128"
     },
     {
@@ -1035,7 +1527,11 @@ window.PATH_GROSS_DATA = {
       "group": "Eye",
       "answer": "Malignant melanoma",
       "organ": "Eye",
-      "image": "assets/cards/p129.jpg",
+      "image": "assets/cards/p129-1.jpg",
+      "images": [
+        "assets/cards/p129-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "eye-malignant-melanoma-129"
     },
     {
@@ -1044,7 +1540,11 @@ window.PATH_GROSS_DATA = {
       "group": "Eye",
       "answer": "Malignant melanoma",
       "organ": "Eye",
-      "image": "assets/cards/p130.jpg",
+      "image": "assets/cards/p130-1.jpg",
+      "images": [
+        "assets/cards/p130-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "eye-malignant-melanoma-130"
     },
     {
@@ -1053,7 +1553,11 @@ window.PATH_GROSS_DATA = {
       "group": "Eye",
       "answer": "Retinoblastoma",
       "organ": "Eye",
-      "image": "assets/cards/p131.jpg",
+      "image": "assets/cards/p131-1.jpg",
+      "images": [
+        "assets/cards/p131-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "eye-retinoblastoma-131"
     },
     {
@@ -1062,7 +1566,11 @@ window.PATH_GROSS_DATA = {
       "group": "Skin",
       "answer": "Angiosarcoma",
       "organ": "Skin",
-      "image": "assets/cards/p133.jpg",
+      "image": "assets/cards/p133-1.jpg",
+      "images": [
+        "assets/cards/p133-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "skin-angiosarcoma-133"
     },
     {
@@ -1071,7 +1579,11 @@ window.PATH_GROSS_DATA = {
       "group": "Skin",
       "answer": "Angiosarcoma",
       "organ": "Skin",
-      "image": "assets/cards/p134.jpg",
+      "image": "assets/cards/p134-1.jpg",
+      "images": [
+        "assets/cards/p134-1.jpg"
+      ],
+      "imageCount": 1,
       "slug": "skin-angiosarcoma-134"
     }
   ]
