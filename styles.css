@@ -284,6 +284,7 @@ select {
 }
 
 .image-tile {
+  margin: 0;
   position: relative;
   display: flex;
   align-items: center;
@@ -297,10 +298,10 @@ select {
 }
 
 .image-tile img {
-  width: 100%;
+  width: auto;
+  max-width: 100%;
   height: auto;
-  max-height: 70vh;
-  object-fit: contain;
+  max-height: min(70vh, 680px);
   display: block;
 }
 
@@ -323,12 +324,12 @@ select {
 
 .label-mask.top {
   top: 0;
-  height: 30%;
+  height: min(24%, 180px);
 }
 
 .label-mask.bottom {
   bottom: 0;
-  height: 14%;
+  height: min(7%, 64px);
 }
 
 .image-frame.show-source .label-mask {
