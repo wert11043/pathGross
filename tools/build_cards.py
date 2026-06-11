@@ -118,7 +118,7 @@ CARDS = [
     {"page": 108, "group": "Bone", "answer": "Osteosarcoma", "organ": "Radius"},
     {"page": 109, "group": "Bone", "answer": "Giant cell tumor of bone", "organ": "Bone"},
     {"page": 110, "group": "Bone", "answer": "Avascular necrosis", "organ": "Femoral head"},
-    {"page": 111, "group": "Bone", "answer": "Fibrous dysplasia", "organ": "Rib"},
+    {"page": 111, "group": "Bone", "answer": "Avascular necrosis", "organ": "Femoral head"},
     {"page": 114, "group": "Joint, soft tissue, and skin", "answer": "Lipoma", "organ": "Soft tissue"},
     {"page": 115, "group": "Joint, soft tissue, and skin", "answer": "Liposarcoma", "organ": "Soft tissue"},
     {"page": 116, "group": "Joint, soft tissue, and skin", "answer": "Neurofibroma", "organ": "Pelvic soft tissue"},
@@ -144,7 +144,12 @@ def resolve_pdf_path() -> Path:
     candidates = sorted(REPO_ROOT.parent.glob(PDF_GLOB))
     if not candidates:
         raise FileNotFoundError(f"No PDF matched {PDF_GLOB!r} under {REPO_ROOT.parent}")
-    return candidates[0]
+
+    preferred = [path for path in candidates if "標本" in path.stem]
+    if preferred:
+        return max(preferred, key=lambda path: path.stat().st_size)
+
+    return max(candidates, key=lambda path: path.stat().st_size)
 
 
 def slugify(value: str) -> str:

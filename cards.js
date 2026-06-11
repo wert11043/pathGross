@@ -1343,14 +1343,14 @@ window.PATH_GROSS_DATA = {
       "id": "card-099",
       "page": 111,
       "group": "Bone",
-      "answer": "Fibrous dysplasia",
-      "organ": "Rib",
+      "answer": "Avascular necrosis",
+      "organ": "Femoral head",
       "image": "assets/cards/p111-1.jpg",
       "images": [
         "assets/cards/p111-1.jpg"
       ],
       "imageCount": 1,
-      "slug": "bone-fibrous-dysplasia-111"
+      "slug": "bone-avascular-necrosis-111"
     },
     {
       "id": "card-100",
