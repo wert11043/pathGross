@@ -4,7 +4,7 @@ const REVISIT_OFFSET = 4;
 const SWIPE_THRESHOLD = 110;
 
 const state = {
-  pool: "all",
+  pool: new Set(),
   group: "all",
   deck: [],
   current: null,
@@ -88,9 +88,8 @@ function getCardStatus(card) {
 
 function matchesPool(card) {
   const status = getCardStatus(card);
-  if (state.pool === "all") return true;
-  if (state.pool === "new") return status === "new";
-  return status === state.pool;
+  if (state.pool.size === 0) return true;
+  return state.pool.has(status);
 }
 
 function matchesGroup(card) {
@@ -106,12 +105,12 @@ function buildDeck() {
   state.sessionStartSize = state.deck.length;
 }
 
-function renderChips(container, options, activeKey, onSelect) {
+function renderChips(container, options, isActive, onSelect) {
   container.innerHTML = "";
   options.forEach((option) => {
     const button = document.createElement("button");
     button.type = "button";
-    button.className = `chip${option.key === activeKey ? " is-active" : ""}`;
+    button.className = `chip${isActive(option.key) ? " is-active" : ""}`;
     button.textContent = option.label;
     button.addEventListener("click", () => onSelect(option.key));
     container.appendChild(button);
@@ -119,13 +118,28 @@ function renderChips(container, options, activeKey, onSelect) {
 }
 
 function renderFilters() {
-  renderChips(elements.poolChips, poolOptions, state.pool, (key) => {
-    state.pool = key;
+  renderChips(elements.poolChips, poolOptions, (key) => {
+    if (key === "all") {
+      return state.pool.size === 0;
+    }
+    return state.pool.has(key);
+  }, (key) => {
+    if (key === "all") {
+      state.pool.clear();
+      rebuildAndRender();
+      return;
+    }
+
+    if (state.pool.has(key)) {
+      state.pool.delete(key);
+    } else {
+      state.pool.add(key);
+    }
     rebuildAndRender();
   });
 
   const groupOptions = [{ key: "all", label: "All systems" }, ...data.groups.map((group) => ({ key: group, label: group }))];
-  renderChips(elements.groupChips, groupOptions, state.group, (key) => {
+  renderChips(elements.groupChips, groupOptions, (key) => key === state.group, (key) => {
     state.group = key;
     rebuildAndRender();
   });
